@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>婺源风景区</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>婺源风景区</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="attractions.html">景点介绍</a></li>
+                <li><a href="guide.html">旅游攻略</a></li>
+                <li><a href="booking.html">预订服务</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       
+        <section class="banner">
+            <img src="assets/pic5.JPG" alt="婺源风景区">
+        </section>
+        <section class="highlights">
+            <h2>精选景点</h2>
+            <ul>
+                <li><img src="assets/pic3.JPG" alt="景点1"></li>
+                <li><img src="assets/pic4.JPG" alt="景点2"></li>
+                <li><img src="assets/pic6.JPG" alt="景点3"></li>
+            </ul>
+        </section>
+        <section class="intro">
+            <h2>关于婺源</h2>
+            <p>婺源，位于中国江西省东北部，被誉为“中国最美的乡村”。这里以其如画的自然风光、丰富的文化遗产和独特的徽派建筑而闻名。婺源的春天，油菜花海与徽派村落相映成趣，构成了一幅幅动人的田园画卷。</p>
+            <p>婺源不仅拥有迷人的自然景观，还有深厚的历史文化底蕴。这里是徽州文化的重要发源地之一，徽剧、徽菜、徽派建筑和徽商文化在这里交融，形成了独特的地方特色。</p>
+        </section>
+    
+        <section class="attractions">
+            <h2>主要景点</h2>
+            <ul class="attractions-list">
+                <li>
+                    <img src="assets/pic1.JPG" alt="江岭" class="img">
+                    <div class="attraction-text">
+                        <h3>江岭</h3>
+                        <p>江岭是婺源的标志性景点之一，以其壮观的梯田和油菜花海而著称。</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/pic2.JPG" alt="篁岭" class="img">
+                    <div class="attraction-text">
+                        <h3>篁岭</h3>
+                        <p>篁岭以其晒秋景观和徽派古村落而闻名，是体验徽州文化和乡村生活的好去处。</p>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 婺源风景区. 保留所有权利.</p>
+    </footer>
+</body>
+
+<style>
+.img{
+    width: 500px;
+    height: 1000px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #4CAF50, #FFF);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #4CAF50;
+}
+
+main {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.banner img:hover {
+    transform: scale(1.05);
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.highlights img {
+    width: 100%;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.highlights img:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+</html>

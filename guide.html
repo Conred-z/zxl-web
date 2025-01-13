@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游攻略 - 婺源风景区</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>婺源风景区</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="attractions.html">景点介绍</a></li>
+                <li><a href="guide.html">旅游攻略</a></li>
+                <li><a href="booking.html">预订服务</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="guide">
+            <h2>旅游攻略</h2>
+            <!-- 假设有两篇攻略 -->
+            <article>
+                <h3>婺源篁岭一日游攻略</h3>
+                <p>篁岭景区内：有3家民宿——晒秋美宿，天街酒店，倚山居美宿。住宿可以免门票，但节假日房价较贵。
+                    景区外的山上晓鳙村：有很多民宿，步行到景区入口大概十分钟，不用坐索道。适合旅游高峰期，不然排队坐索道要一两个小时。条件一般，都是村民自建民宿。
+                    山下：也有一些民宿。如果只在篁岭玩一天之后还要去婺源其他景点，可以住到江湾附近，那边民宿多一些，交通也方便。</p>
+                <div>
+                    <p>垒心桥：一个很有特色的桥，适合拍照。
+                        天街：被称为小丽江，一条水街，水雾缭绕鲜花环绕，像人间仙境。
+                        晒秋：晒秋美景尽收眼底，是篁岭的标志性景观。
+                        花溪水街：适合拍汉服，氛围感十足。
+                        怪屋：视觉错觉，别人以为你在屋顶上，其实你在地面上，挺有意思。
+                        梯田：可以乘坐缆车上下，欣赏梯田的美景。</p>
+                </div>
+            </article>
+            <article>
+                <h3>婺源江湾一日游攻略</h3>
+                <p>婺源的红鲤鱼：味道鲜美，享有盛誉，去了一定要尝尝。当地的饭馆里都有这种鱼吃，也可以在市场里买好鱼让房东煮给来吃。
+                    距离婺源最近的是景德镇火车站，发往婺源的班车也比较多，两个小时左右可抵达。
+                    江湾离晓起非常近，游客可以先游玩江湾古镇，再去晓起村欣赏宁静之美。
+                    建议住在当地村民改建的客栈，不但便宜，还能体会独特的乡野情趣</p>
+                    <div>
+                        <p>婺源以整个县为旅游景区，景点较多且分散，各景点之间可坐中巴前往，车费6-10元不等，路程时间较长，适合1-2人、时间较多的游客选择。3人以上，建议选择自驾或包车游览。自驾车进入婺源一般从衢州、黄山（屯溪）、景德镇、上饶进入，有多条高速公路直达，各线路沿途也有许多不错的景点和风光可游览，婺源境内目前大部分景点也都修好了柏油路，路况良好；包车的价格一般在200元/天以上，根据车型及淡旺季而异。</p>
+                    </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 婺源风景区. 保留所有权利.</p>
+    </footer>
+</body>
+
+<style>
+    /* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基础字体和背景设置 */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* 头部样式 */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* 主体内容样式 */
+main {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.highlights img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.attractions .attraction {
+    margin-bottom: 20px;
+}
+
+.attractions .attraction h3 {
+    margin-bottom: 10px;
+}
+
+.attractions .attraction p {
+    margin-top: 10px;
+}
+
+/* 表单样式 */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .highlights img {
+        width: 100%;
+    }
+}
+</style>
+
+</html>

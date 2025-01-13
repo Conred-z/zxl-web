@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>景点介绍 - 婺源风景区</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>婺源风景区</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="attractions.html">景点介绍</a></li>
+                <li><a href="guide.html">旅游攻略</a></li>
+                <li><a href="booking.html">预订服务</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="attractions">
+            <h2>景点介绍</h2>
+            <!-- 假设有三个景点 -->
+            <div class="attraction">
+                <h3>篁岭</h3>
+                <img src="assets/pic7.jpeg" alt="景点一">
+                <p>篁岭是婺源最著名的景点之一，也是当地人认为的婺源代表。村落始建于明代中叶，距今已有500多年历史。篁岭村四面环山，100多栋古民居错落有致地分布在百米落差的山窝之中。每到丰收时节，村民用竹晒匾晾晒农作物，形成独特的“晒秋”景观，阳光下五彩缤纷的丰收成果与古民居相映成趣。篁岭对面的万亩梯田更是壮观，层层叠叠的梯田从沟谷延伸到山腰，其中的“心形”池塘更是增添了几分浪漫。</p>
+            </div>
+            <div class="attraction">
+                <h3>江湾</h3>
+                <img src="assets/pic8.jpeg" alt="景点二">
+                <p>江湾是婺源东北部的一个千年古镇，具有深厚的文化底蕴。这里自宋至清，孕育了众多文人墨客，包括状元、进士和仕宦38人。江湾镇嵌于锦峰绣岭、清溪碧河之中，北部后龙山林木葱郁，南侧梨园河呈太极图“S”形蜿蜒流过。镇内保存有御史府、中宪第等明清官邸，以及滕家老屋、培心堂等徽派商宅。漫步在古朴的街道上，仿佛穿越回了古代。</p>
+            </div>
+            <div class="attraction">
+                <h3>李坑</h3>
+                <img src="assets/pic9.jpeg" alt="景点三">
+                <p>李坑是一个以李姓聚居为主的古村落，建村于北宋大中年间，距今已有近千年历史。村内明清古建遍布，民居宅院沿溪而建，依山而立，山光水色与古民居融为一体，相得益彰，构筑了一幅“小桥、流水、人家”的美丽画卷。李坑的特色美食也远近闻名，如花菇石鸡、清焖荷包鲤、李坑蒸鸡等。在临河的茶楼和酒店，还能品尝到杨梅酒、李坑糯米酒等美味。</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 婺源风景区. 保留所有权利.</p>
+    </footer>
+</body>
+
+<style>
+    /* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基础字体和背景设置 */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* 头部样式 */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* 主体内容样式 */
+main {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.highlights img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.attractions .attraction {
+    margin-bottom: 20px;
+}
+
+.attractions .attraction h3 {
+    margin-bottom: 10px;
+}
+
+.attractions .attraction p {
+    margin-top: 10px;
+}
+
+/* 表单样式 */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .highlights img {
+        width: 100%;
+    }
+}
+</style>
+
+</html>
